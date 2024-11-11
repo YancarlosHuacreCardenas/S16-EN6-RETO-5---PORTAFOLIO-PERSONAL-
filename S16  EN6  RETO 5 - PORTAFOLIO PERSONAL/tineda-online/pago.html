@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagar con Visa</title>
+    <link rel="stylesheet" href="/tineda-online/css/pago.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Tienda Virtual</div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="carrito.html">Carrito (<span id="contador-carrito">0</span>)</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="formulario-pago">
+            <h2>Formulario de Pago</h2>
+            <form id="pago-form" onsubmit="return validarFormulario()">
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" placeholder="Ej: juan.perez@example.com" required>
+                    <span class="error-message" id="correo-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="numero-tarjeta">Número de Tarjeta:</label>
+                    <input type="text" id="numero-tarjeta" placeholder="XXXX-XXXX-XXXX-XXXX" required maxlength="19" oninput="formatearNumeroTarjeta(this)">
+                    <span class="error-message" id="numero-tarjeta-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="fecha-expiracion">Fecha de Expiración:</label>
+                    <input type="text" id="fecha-expiracion" placeholder="MM/AA" required maxlength="5" oninput="formatearFechaExpiracion(this)">
+                    <span class="error-message" id="fecha-expiracion-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" placeholder="XXX" required maxlength="3">
+                    <span class="error-message" id="cvv-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="total">Total a Pagar:</label>
+                    <input type="text" id="total" placeholder="0.00" readonly>
+                </div>
+
+                <button type="submit">Realizar Pago</button>
+            </form>
+        </section>
+    </main>
+    
+    <script src="/tineda-online/js/main.js"></script>
+    <script src="/tineda-online/js/pago.js"></script>
+</body>
+</html>

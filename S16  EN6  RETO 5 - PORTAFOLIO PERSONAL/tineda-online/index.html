@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Virtual - Inicio</title>
+    <link rel="stylesheet" href="/tineda-online/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Tienda Virtual</div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="carrito.html">Carrito (<span id="contador-carrito">0</span>)</a>
+        </nav>
+        <button id="modo-oscuro" aria-label="Activar modo oscuro">🌙</button>
+    </header>
+
+<!-- Sección de categorías -->
+<section class="banner" aria-labelledby="banner-title">
+    <div class="banner-images">
+        <img class="banner-image" src="/Img/Parfum-Spray.jpg" alt="Promoción 1">
+        <img class="banner-image" src="/img/Latop-Gamer.jpg" alt="Promoción 2">
+        <img class="banner-image" src="https://via.placeholder.com/1200x300?text=Promoción+3" alt="Promoción 3">
+    </div>
+    <div class="banner-controls">
+        <button class="prev" aria-label="Imagen anterior">&#10094;</button>
+        <button class="next" aria-label="Siguiente imagen">&#10095;</button>
+    </div>
+    <script src="/tineda-online/js/Banner.js"></script>
+</section>
+
+
+    <!-- Productos destacados -->
+    <section class="productos">
+        <h2>Productos Destacados</h2>
+        <div class="producto-grid">
+            <!-- Repeat this div for each product -->
+            <article class="producto">
+                <img src="/tineda-online/img/Latop-Gamer.jpg" alt="Laptop Gamer" loading="lazy">
+                <h3>Laptop Gamer</h3>
+                <p>Precio: <span class="precio">$10</span></p>
+                <button onclick="agregarAlCarrito('Laptop Gamer', 10, '/img/Latop-Gamer.jpg')">Agregar al carrito</button>
+            </article>
+            <article class="producto">
+                <img src="img/Parfum-Spray.jpg" alt="Parfum Spray" loading="lazy">
+                <h3>Parfum Spray</h3>
+                <p>Precio: <span class="precio">$15</span></p>
+                <button onclick="agregarAlCarrito('Parfum Spray', 15, 'img/Parfum-Spray.jpg')">Agregar al carrito</button>
+            </article>
+            <article class="producto">
+                <img src="img/Yogurt.jfif" alt="Yogurt" loading="lazy">
+                <h3>Yogurt</h3>
+                <p>Precio: <span class="precio">$250</span></p>
+                <button onclick="agregarAlCarrito('Yogurt', 250, 'img/Yogurt.jfif')">Agregar al carrito</button>
+            </article>
+            <article class="producto">
+                <img src="img/Headphones.jpg" alt="Headphones" loading="lazy">
+                <h3>Headphones</h3>
+                <p>Precio: <span class="precio">$30</span></p>
+                <button onclick="agregarAlCarrito('Headphones', 30, 'img/Headphones.jpg')">Agregar al carrito</button>
+            </article>
+        </div>
+    </section>
+
+    <!-- Ofertas Especiales -->
+    <section class="productos">
+        <h2>Ofertas Especiales</h2>
+        <div class="producto-grid">
+            <article class="producto">
+                <img src="img/smartwatch.jpg" alt="Smartwatch" loading="lazy">
+                <h3>Smartwatch</h3>
+                <p>Precio: <span class="precio">$50</span></p>
+                <button onclick="agregarAlCarrito('Smartwatch', 50, 'img/smartwatch.jpg')">Agregar al carrito</button>
+            </article>
+            <article class="producto">
+                <img src="img/tablet.jpg" alt="Tablet" loading="lazy">
+                <h3>Tablet</h3>
+                <p>Precio: <span class="precio">$80</span></p>
+                <button onclick="agregarAlCarrito('Tablet', 80, 'img/tablet.jpg')">Agregar al carrito</button>
+            </article>
+            <article class="producto">
+                <img src="img/camera.jpg" alt="Cámara Digital" loading="lazy">
+                <h3>Cámara Digital</h3>
+                <p>Precio: <span class="precio">$120</span></p>
+                <button onclick="agregarAlCarrito('Cámara Digital', 120, 'img/camera.jpg')">Agregar al carrito</button>
+            </article>
+            <article class="producto">
+                <img src="img/sneakers.jpg" alt="Sneakers" loading="lazy">
+                <h3>Sneakers</h3>
+                <p>Precio: <span class="precio">$60</span></p>
+                <button onclick="agregarAlCarrito('Sneakers', 60, 'img/sneakers.jpg')">Agregar al carrito</button>
+            </article>
+        </div>
+    </section>
+
+    <section class="productos">
+        <h2>Nuevas Llegadas</h2>
+        <div class="producto-grid">
+            <article class="producto">
+                <img src="img/earbuds.jpg" alt="Earbuds Inalámbricos" loading="lazy">
+                <h3>Earbuds Inalámbricos</h3>
+                <p>Precio: <span class="precio">$25</span></p>
+                <button onclick="agregarAlCarrito('Earbuds Inalámbricos', 25, 'img/earbuds.jpg')">Agregar al carrito</button>
+            </article>
+            <article class="producto">
+                <img src="img/laptop.jpg" alt="Laptop de Oficina" loading="lazy">
+                <h3>Laptop de Oficina</h3>
+                <p>Precio: <span class="precio">$300</span></p>
+                <button onclick="agregarAlCarrito('Laptop de Oficina', 300, 'img/laptop.jpg')">Agregar al carrito</button>
+            </article>
+            <article class="producto">
+                <img src="img/speaker.jpg" alt="Bocina Bluetooth" loading="lazy">
+                <h3>Bocina Bluetooth</h3>
+                <p>Precio: <span class="precio">$40</span></p>
+                <button onclick="agregarAlCarrito('Bocina Bluetooth', 40, 'img/speaker.jpg')">Agregar al carrito</button>
+            </article>
+            <article class="producto">
+                <img src="img/keyboard.jpg" alt="Teclado Mecánico" loading="lazy">
+                <h3>Teclado Mecánico</h3>
+                <p>Precio: <span class="precio">$45</span></p>
+                <button onclick="agregarAlCarrito('Teclado Mecánico', 45, 'img/keyboard.jpg')">Agregar al carrito</button>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Enlaces Rápidos</h3>
+            <div class="quick-links-grid">
+                <div><a href="#sobre-nosotros">Sobre Nosotros</a></div>
+                <div><a href="#contacto">Contacto</a></div>
+                <div><a href="#terminos">Términos y Condiciones</a></div>
+                <div><a href="#politica-privacidad">Política de Privacidad</a></div>
+                <div><a href="#devoluciones">Devoluciones</a></div>
+            </div>
+        </div>
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <div class="social-media">
+                    <a href="#" aria-label="Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-info">
+                <p>© 2024 Tienda Virtual. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="/tineda-online/js/main.js"></script>
+</body>
+</html>

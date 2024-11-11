@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #007BFF; /* Color de fondo del menú */
+    padding: 10px 0; /* Espaciado superior e inferior */
+}
+
+nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding */
+    text-align: center; /* Centra el texto */
+}
+
+nav ul li {
+    display: inline; /* Muestra los elementos de la lista en línea */
+    margin: 0 15px; /* Espaciado entre los elementos */
+}
+
+nav ul li a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    font-weight: bold; /* Texto en negrita */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Subraya el texto al pasar el mouse */
+}
+
+main {
+    padding: 20px;
+}
+
+#habilidades {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.habilidades-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.habilidad {
+    flex: 1 1 300px; /* Ajusta el tamaño según sea necesario */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.habilidad:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.habilidad h3 {
+    margin-top: 0;
+    color: #007BFF;
+}
+
+.habilidad p {
+    color: #555;
+    line-height: 1.5;
+}

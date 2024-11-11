@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Virtual - Inicio</title>
+    <link rel="stylesheet" href="/tineda-onlinecss/styles.css">
+    <link rel="stylesheet" href="/tineda-onlinecss/darkmode.css">
+    <link rel="stylesheet" href="/tineda-onlinecss/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Tienda Virtual</div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="carrito.html">Carrito (<span id="contador-carrito">0</span>)</a>
+        </nav>
+        <button id="modo-oscuro">🌙</button>
+    </header>
+
+    <section class="productos">
+        <h2>Productos Destacados</h2>
+        <div class="producto-grid">
+            <div class="producto">
+                <img src="img/producto1.jpg" alt="Producto 1">
+                <h3>Producto 1</h3>
+                <p>Precio: $10</p>
+                <button onclick="agregarAlCarrito('Producto 1', 10)">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/producto2.jpg" alt="Producto 2">
+                <h3>Producto 2</h3>
+                <p>Precio: $15</p>
+                <button onclick="agregarAlCarrito('Producto 2', 15)">Agregar al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago con Visa</title>
+    <link rel="stylesheet" href="/tineda-online/css/Visa.css">  <!-- Vincula tu archivo CSS -->
+    <script src="/js/visa.js" defer></script>  <!-- Vincula el archivo JavaScript -->
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Realiza tu Pago con Visa</h2>
+
+        <!-- Mensaje de pago realizado -->
+        <div id="mensaje-pago" class="mensaje-pago" style="display: none;">
+            <img src="https://www.gader.es/wp-content/uploads/2022/03/check-circle-outline.png" alt="Pago Realizado" class="checkmark"> <!-- URL de una imagen de checkmark -->
+            <p>Pago realizado con éxito.</p>
+        </div>
+
+        <form id="visa-payment-form" class="payment-form">
+            <label for="card-number">Número de Tarjeta</label>
+            <input type="text" id="card-number" name="card_number" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+
+            <label for="expiry-date">Fecha de Vencimiento</label>
+            <input type="text" id="expiry-date" name="expiry_date" placeholder="MM/AA" required>
+
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+
+            <div class="total-container">
+                Total a Pagar: <span id="total-pago">$0.00</span>
+            </div>
+
+            <button type="submit" class="submit-button">Pagar con Visa</button>
+        </form>
+    </div>
+</body>
+</html>

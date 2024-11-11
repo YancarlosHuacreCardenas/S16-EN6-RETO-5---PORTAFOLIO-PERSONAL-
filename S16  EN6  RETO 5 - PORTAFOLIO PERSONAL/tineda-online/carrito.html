@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="/tineda-online/css/carrito.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Tienda Virtual</div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="carrito.html">Carrito (<span id="contador-carrito">0</span>)</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="carrito">
+            <h2>Carrito de Compras</h2>
+            <table class="tabla-carrito">
+                <thead>
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-carrito">
+                    <!-- Los productos añadidos al carrito aparecerán aquí -->
+                </tbody>
+            </table>
+            
+            <div id="total">
+                Total: $<span id="total-carrito">0.00</span>
+            </div>
+            <a id="finalizar-compra" href="Metodo-Pago.html">
+                <button>Finalizar Compra</button>
+            </a>            
+        </section>
+    </main>
+
+    <script src="/tineda-online/js/main.js"></script>
+</body>
+</html>

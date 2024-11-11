@@ -1,0 +1,243 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Color de fondo suave */
+    color: #333; /* Color de texto */
+}
+
+header {
+    background: #ffdd57; /* Color de fondo del encabezado */
+    padding: 15px 20px; /* Espaciado interno */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para el encabezado */
+}
+
+.logo {
+    font-size: 24px; /* Tamaño de la fuente del logo */
+    font-weight: bold; /* Negrita */
+}
+
+nav {
+    display: flex; /* Asegura que los enlaces se muestren en línea */
+}
+
+nav a {
+    margin: 0 15px; /* Espaciado entre enlaces */
+    text-decoration: none; /* Sin subrayado */
+    color: #333; /* Color de texto de los enlaces */
+    font-weight: 500; /* Peso de fuente */
+    transition: color 0.3s; /* Transición suave */
+}
+
+nav a:hover,
+nav a.active {
+    color: #e67e22; /* Color al pasar el mouse o si está activo */
+}
+
+button {
+    background: none; /* Sin fondo */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cursor de mano */
+    font-size: 20px; /* Tamaño del botón */
+}
+
+/* Estilos del main y sección de contacto */
+main {
+    padding: 20px; /* Espaciado interno para el main */
+}
+
+.contacto {
+    max-width: 600px; /* Controla el ancho del formulario */
+    margin: 40px auto; /* Centra el formulario verticalmente */
+    padding: 30px;
+    background: #fff; /* Fondo blanco para el formulario */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.contacto h2 {
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+.contacto p {
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilos del formulario */
+.form-group {
+    margin-bottom: 20px; /* Espaciado entre campos */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Ocupa todo el ancho */
+    padding: 12px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transición suave */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #ffdd57; /* Color de borde al enfocar */
+    box-shadow: 0 0 5px rgba(255, 221, 87, 0.5); /* Sombra de enfoque */
+}
+
+button[type="submit"] {
+    background: #ffdd57; /* Color de fondo del botón */
+    color: #333; /* Color del texto del botón */
+    padding: 12px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background 0.3s, transform 0.2s; /* Animaciones suaves */
+}
+
+button[type="submit"]:hover {
+    background: #e6c44c; /* Color del botón al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+/* Mensaje de éxito */
+.mensaje-exito {
+    margin-top: 15px; /* Margen superior */
+    color: #28a745; /* Color verde para el mensaje de éxito */
+    font-weight: bold; /* Negrita */
+}
+
+/* Estilos del pie de página */
+footer {
+    background: #333; /* Color de fondo del pie de página */
+    color: #fff; /* Color de texto blanco */
+    text-align: center; /* Texto centrado */
+    padding: 20px; /* Espaciado interno */
+}
+
+.footer-content {
+    max-width: 1200px; /* Controla el ancho máximo */
+    margin: 0 auto; /* Centra el contenido */
+}
+
+.informacion-adicional h3 {
+    margin: 10px 0; /* Margen superior e inferior */
+}
+
+.social-media {
+    margin-top: 10px; /* Margen superior */
+}
+
+.social-icon {
+    margin: 0 10px; /* Espaciado entre iconos */
+    color: #fff; /* Color blanco */
+    font-size: 24px; /* Tamaño del icono */
+    transition: color 0.3s; /* Transición suave */
+}
+
+.social-icon:hover {
+    color: #ffdd57; /* Color al pasar el mouse */
+}
+
+/* Estilos Responsivos para Pantallas Pequeñas (Celulares - Máximo 420px) */
+@media (max-width: 420px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        width: 100%; /* Asegúrate de que el nav ocupe todo el ancho */
+        overflow: hidden; /* Evitar el desbordamiento */
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px 0; /* Padding vertical para mayor área de clic */
+        width: 100%; /* Hacer que los enlaces ocupen todo el ancho */
+        text-align: center; /* Centrar el texto */
+    }
+
+    .contacto h2 {
+        font-size: 22px;
+    }
+
+    .contacto p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    button[type="submit"] {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        padding: 10px;
+    }
+}
+
+/* Estilos Responsivos para Pantallas Medianas (Tabletas - Máximo 768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 6px 0;
+    }
+
+    .contacto h2 {
+        font-size: 26px;
+    }
+
+    .contacto p {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    button[type="submit"] {
+        width: 95%;
+        font-size: 16px;
+    }
+
+    button[type="submit"] {
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    .footer-content {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,158 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilos del encabezado */
+header {
+    background: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Estilos de la navegación */
+nav {
+    margin-top: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para la sección de proyectos */
+#proyectos {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#proyectos h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Estilos para cada proyecto */
+.proyecto {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.proyecto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.proyecto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.proyecto h3 {
+    color: #007bff;
+    margin: 15px 0;
+}
+
+.proyecto p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Estilos para el enlace del proyecto */
+.proyecto a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.proyecto a:hover {
+    background-color: #0056b3; /* Color al pasar el mouse */
+    transform: scale(1.05); /* Aumenta el tamaño del botón al pasar el mouse */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    #proyectos {
+        padding: 20px;
+    }
+
+    #proyectos h2 {
+        font-size: 1.8em;
+    }
+
+    .proyecto {
+        margin: 15px 0;
+        padding: 15px;
+    }
+
+    .proyecto h3 {
+        font-size: 1.5em;
+    }
+
+    .proyecto p {
+        font-size: 0.9em;
+    }
+
+    .proyecto a {
+        padding: 8px 12px;
+    }
+}
+
+/* Estilos para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    #proyectos h2 {
+        font-size: 1.5em;
+    }
+
+    .proyecto h3 {
+        font-size: 1.3em;
+    }
+
+    .proyecto p {
+        font-size: 0.85em;
+    }
+}
